@@ -22,10 +22,10 @@ public class TwitterSource {
 
     ConfigurationBuilder cb = new ConfigurationBuilder();
     cb.setDebugEnabled(true);
-    cb.setOAuthConsumerKey("BlxW064mvxjGhpcIOaS42Ybbd");
-    cb.setOAuthConsumerSecret("U6Gz5n7635mFfbtqI1oxxKMCBR5QcP9niQUbAAU9D3mz0l3uTA");
-    cb.setOAuthAccessToken("1395669122-l4FA606uDOJ5sp3WUiEbzpmJ1fm2HqtBYBxSoPO");
-    cb.setOAuthAccessTokenSecret("6TLS69gSeh3XZPPxT4ulX7xWda6O4asGDB3B3gsLoWxv8");
+    cb.setOAuthConsumerKey("Consumer Key");
+    cb.setOAuthConsumerSecret("Consumer Secret");
+    cb.setOAuthAccessToken("Access Token");
+    cb.setOAuthAccessTokenSecret("Access Token Secret");
 
     TwitterStream twitterStream = new TwitterStreamFactory(cb.build()).getInstance();
     StatusListener listener = new StatusListener() {
